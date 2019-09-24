@@ -1,0 +1,46 @@
+#section_home, #error {
+
+  //margin-bottom: 30px;
+  position: relative;
+
+  .item {
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 0;
+  }
+
+  .section_home_content {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    color: #fff;
+    padding: 5px;
+    font-size: 72px;
+    left: 0;
+
+    .headline {
+      font-family: 'Europa';
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 54px;
+      letter-spacing: 3px;
+      font-style: normal;
+    }
+
+    .subtitle {
+      font-family:'Adobe Caslon Pro', 'Georgia';
+      font-size: 65px;
+      font-style: italic;
+      line-height: 1;
+      display: block;
+    }
+
+  }
+
+}
+
+.hentry {
+  #section_home {
+    margin-bottom: 30px;
+  }
+}

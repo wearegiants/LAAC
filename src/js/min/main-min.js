@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".wallpaper").background(),$(".carousel").carousel(),$(".equal").imagesLoaded(function(){$(this).equalize()}),$(".cart-item").equalize({target:".cart-item-cell"}),$(".swap").swap(),searchClick()});

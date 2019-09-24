@@ -1,0 +1,45 @@
+.tweet .tweet-meta {
+  margin-top: 10px;
+}
+.tweet-footer {
+  display: block;
+  border-top: 1px solid #204772;
+  padding-top: 8px;
+  color: #204772;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 8px;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  display: inline-block;
+}
+.tweet-footer a {
+  color: #204772;
+}
+.tweet ul {
+  padding: 0;
+}
+.tweet ul li {
+  padding: 10px 0;
+  display: block;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.tweet ul li a {
+  color: #094678;
+  text-decoration: underline;
+}
+.tweet ul li .date,
+.tweet ul li .link {
+  color: #999;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 8px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-size: 0.75rem;
+  text-decoration: none;
+}

@@ -1,0 +1,36 @@
+@alertHeight: (@spaced*3);
+
+#wrapper.dismissedalert {
+
+   .transition();
+   transform: translate(0, -@alertHeight);
+
+}
+
+.alert {
+
+   width: 100%;
+   margin-bottom: 0;
+   overflow: hidden;
+   padding: 0;
+   z-index: 99;
+   height: @alertHeight;
+   
+   @media @min {
+      position: relative;
+   }
+
+   @media @tablet {
+//      position: fixed;
+   }
+
+   &-active {
+      transform: translate(0, 0);
+      margin-bottom: 0;
+   }
+
+   &-notice {
+      background: @notice;
+   }
+
+}

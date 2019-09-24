@@ -1,0 +1,90 @@
+@import '/assets/bower_components/Naver/jquery.fs.naver.min.css';
+@import '/assets/bower_components/Shifter/jquery.fs.shifter.css';
+
+.gridlock.gridlock-fluid {
+  > .row {
+    margin: @gutter*2 @gutter;
+  }
+}
+
+#header-wrap {
+  margin-top: -@gutter*2;
+}
+
+#header, #header2 {
+  .padder {
+    a {
+      margin: 0 @gutter;
+    }
+    #main-nav {
+      a {
+        margin: 0 @gutter
+      }
+    }
+  }
+}
+
+.home.moded {
+  margin-bottom: @gutter*2;
+}
+
+#main-nav {
+
+  &.naver.enabled {
+    background: none;
+
+    .naver-handle {
+      background: none;
+      border: RGBA(19, 72, 116, 1);
+      border-radius: 3px;
+      background: RGBA(19, 72, 116, .9);
+      color: #fff;
+    }
+
+    .naver-container {
+      a {
+        color: RGBA(19, 72, 116, 1);
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid RGBA(19, 72, 116, .2);
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+
+  }
+
+}
+
+#header-wrap.mobile {
+  position: relative;
+  margin-bottom: 5px;
+  .logo {
+    width: 100%!important;
+    display: block;
+    float: none;
+    img {
+      width: 100%;
+      position: relative;
+      margin: 0;
+    }
+  }
+  #main-nav, .naver-handle {
+    font-size: 24px;
+  }
+  .padder {
+    background: RGBA(19, 72, 116, .9);
+  }
+}
+
+
+.wide {
+  .royalslider {
+    margin-bottom: @gutter*2;
+  }
+}
+
+.featured-image {
+  margin-bottom: @gutter*2; 
+}

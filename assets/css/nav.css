@@ -1,0 +1,43 @@
+/* @override http://192.168.1.65:5757/assets/css/layout.css */
+
+#menu-athletics {
+  position: relative;
+}
+
+#menu-athletics li {
+  position: static;
+}
+
+#menu-athletics li:hover {
+  background: #084877;
+  border-color: #084877;
+}
+
+#menu-athletics li:hover > a {
+  position: relative;
+  border: none!important;
+ }
+
+.sub-menu {
+  width: 800px;
+  left: 50%!important;
+  margin-left: -400px!important;
+  background: #084877;
+  padding: 20px!important;
+  z-index: 0;
+  border: none;
+  margin-top:-1px!important;
+}
+
+.sub-menu li {
+  width: 33.3333%;
+  display: block;
+  float: left;
+  text-align: left;
+  border: none!important;
+}
+
+.sub-menu li a {
+  color: #fff;
+  border: none!important;
+}

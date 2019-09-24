@@ -1,0 +1,211 @@
+/* Colors */
+
+$laacblue: #094678;
+$graytext: #67686A;
+
+/* Body */
+
+body { 
+	font-family: 'Europa', 'Helvetica';
+	-webkit-font-smoothing: antialiased;
+}
+body h3{
+	font-family:'Adobe Caslon Pro', 'Georgia';
+	font-size:82px;
+	font-weight:100;
+}
+
+body h4{
+	font-family: 'Adobe Caslon Pro', 'Georgia';
+	color:$laacblue;
+	font-size:24px;
+}
+body h5{
+	font-family:'Adobe Caslon Pro', 'Georgia';
+	color: $laacblue;
+  margin: 0;
+  font-size:40px;
+}
+
+body p{
+	font-family: 'Europa', 'Helvetica';
+	font-size:16px;
+
+}
+p.page{
+  font-family: 'Europa', 'Helvetica';
+  font-size:16px;
+  color:$laacblue;
+
+}
+body h2{
+	font-family:'Europa';
+
+	font-size:13px;
+	letter-spacing:1px;
+	font-weight:700;
+}
+body a{
+	text-decoration:none;
+
+}
+body a:visited{
+
+}
+a.title:visited{
+  color:white;
+}
+
+
+body h6, .page_intro p, .page_intro ul{
+	font-family: 'Europa', 'Helvetica';
+	font-size:18px;
+	color:$graytext;
+	font-weight:100;
+	line-height: 1.5;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.page_intro {
+  ul {
+    margin-left: 20px;
+  }
+  hr {
+    margin: 30px 0;
+  }
+}
+h6 .section{
+	color:white;
+}
+p.footer{
+	font-family:'Adobe Caslon Pro', 'Georgia';
+	color:white;
+}
+p.footer a, a:visited{
+
+}
+p.related_pages{
+	color:white;
+}
+
+.page .header h1 {
+  color: $laacblue;
+  margin: 0;
+  font-family: 'Adobe Caslon Pro';
+  font-size:67px;
+}
+.home .section .meta p {
+  font-family: 'adobe-caslon-pro', 'georgia';
+}
+.home .section .meta .title {
+  font-family:'Adobe Caslon Pro';
+  letter-spacing: 0px;
+  font-size:48px;
+  color: #fff;
+  font-weight: 200;
+  font-style: italic;
+}
+.section .meta .title {
+  font-family:'Adobe Caslon Pro';
+  letter-spacing: 1px;
+  font-size:42px;
+
+}
+
+
+/* Header */
+
+#header, #header2 li {
+  display: inline-block;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+#header li  a {
+  color: #fff; 
+  text-decoration: none;
+  border-bottom:1px black;
+  -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+}
+
+#header2 li a {
+  color: #82A3BB; 
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+#header2 li a:hover{
+  color:#094678;
+}
+#header2 li.current-menu-item a{
+  color:#094678;
+}
+
+
+.page_slider h3{
+	color:white;
+	font-family:'Europa', 'Helvetica';
+	text-transform: uppercase;
+	font-size:16px;
+}
+
+.page_intro a{
+  color:$laacblue;
+}
+.secondary-button{
+	border-top:1px solid #C4D1DA;
+	padding-bottom:12px;
+	text-transform: uppercase;
+
+
+}
+
+
+
+.home.moded {
+  h2.title {
+    line-height: 1.2;
+    margin-bottom: 10px;
+    .title {
+      font-family: 'Europa', Helvetica;
+      text-transform: uppercase;
+      font-style: normal;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 2px;
+      font-size: 36px;
+      display: block;
+    }
+  }
+  p, ul, li {
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.2;
+    font-family:'Adobe Caslon Pro';
+  }
+  .bit-1 {
+    .meta {
+      width: 50%;
+    }
+  }
+  .primary-button {
+    border-top: 1px solid rgba(255,255,255,.25);
+  }
+}
+
+
+#footer-upper {
+  h6, p, #featured-post p {
+    font-size: 17px;
+  }
+}

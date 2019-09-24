@@ -1,0 +1,44 @@
+.page-modal {
+
+	.cover();
+	background: fade(@white, 90%);
+	.transition();
+	//opacity: 0;
+	//pointer-events: none;
+	display: none;
+
+	&.fs-swap {
+		&-enabled {
+			display: block;
+			opacity: 0;
+			pointer-events: none;
+		}
+		&-active {
+			opacity: 1;
+			pointer-events: auto;
+		}
+	}
+
+	&--content {
+		position: relative;
+		box-shadow: 0 0 @spaced*3 @black25;
+		color: @white;
+		h1,h2,h3,h4,h5,h6 {
+			color: @white;
+			font-weight: normal;
+		}
+	}
+
+	&--close {
+		position: absolute;
+		top: @spaced;
+		right: @spaced;
+		background: @black;
+		display: block;
+		height: 30px;
+		line-height: 30px;
+		width: 30px;
+		border-radius: 50%;
+	}
+
+}

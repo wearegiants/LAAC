@@ -1,0 +1,128 @@
+#events {
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  hr {
+    height: 1px;
+    border: 0;
+    background: #eee;
+  }
+
+  .post {
+
+    color: #666;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    padding: 30px;
+
+    &:nth-child(even) {
+      border-right: none;
+    }
+
+    &:last-child, &:nth-last-child(2) {
+      border-bottom: none;
+    }
+
+    .inner {
+      position: relative
+    }
+
+    p {
+      line-height: 1.6
+    }
+
+    a {
+      color:$laacblue;
+
+      &.readmore {
+        border-top: 1px solid #ddd;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 13px;
+        padding-top: 10px;
+      }
+    }
+
+    .meta {
+      //padding: 15px;
+      margin-bottom: 30px;
+
+      span {
+        color:$laacblue;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 1;
+      }
+      h1 {
+        margin: 6px 20px 0px 0;
+        margin-left: -3px;
+        font-size: 40px;
+        font-family: 'Adobe Caslon Pro', 'Georgia';
+      }
+    }
+
+    .image {
+      position: relative;
+
+      &.alignleft {
+        margin-right: 25px;
+      }
+
+      i {
+        position: absolute;
+        color: #fff;
+        bottom: 0;
+        opacity: .5;
+        font-size: 20px;
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        background: $laacblue;
+      }
+      &:hover {
+        i {
+          opacity: 1
+        }
+      }
+    }
+
+  }
+
+}
+
+#event-info {
+  clear: both;
+
+  ul {
+
+    border: 2px solid $laacblue;
+    padding: 0;
+
+    li {
+
+      display: block;
+      margin: 0;
+      border-right: 1px solid $laacblue;
+      padding: 10px;
+      line-height: 1;
+
+      &:last-child {
+        border: none;
+      }
+
+      .label {
+        font-size: 11px;
+        color: $laacblue;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+
+    }
+  }
+}

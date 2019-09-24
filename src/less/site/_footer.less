@@ -1,0 +1,49 @@
+#footer {
+
+   //background: @black;
+	padding: @spaced/5 0;
+	color: @gray;
+   .font_size(15);
+
+	a { 
+      color: inherit; 
+      &:hover {
+         color: @white
+      }
+      @media @min {
+         display: block;
+         text-align: left;
+         &.btn {
+            padding-left: 0;
+         }
+      }
+      @media @tablet {
+         display: inline-block;
+         &.btn {
+            padding-left: 8px;
+            &:first-child {
+               padding-left: 0;
+            }
+         }
+      }
+   }
+
+	&--social {
+		@media @max {
+			text-align: right;
+		}
+	}
+
+   &--copyright {
+      @media @min {
+         text-align: left;
+      }
+      @media @tablet {
+         text-align: left;
+      }
+      @media @max {
+         text-align: center;
+      }
+   }
+
+}

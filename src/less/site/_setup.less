@@ -1,0 +1,241 @@
+@root_font_size: 16;
+
+// Media Queries
+
+@min:  ~"screen and (min-width: 300px)";
+@mobile:  ~"screen and (min-width: 500px)";
+@tablet:  ~"screen and (min-width: 740px)";
+@desktop: ~"screen and (min-width: 980px)";
+@max:   ~"screen and (min-width: 1220px)";
+
+// Colors
+
+@black:       #111;
+@white:       #fff;
+
+@textGray:    #666666;
+@bgGray:      #F2F2F2;
+@lighterGray: #E6E5E6;
+@lightGray:   #E6E7E8;
+@gray:        #999;
+@warmGray:    #C9CEC9;
+@darkGray:    #939597;
+
+@brightRed:   #FF2816;
+@softRed:     #ED7161;
+@lightPink:   #FDE9E3;
+@yellow:      #FCEF55;
+@brightBlue:  #005CA9;
+@blue:        #005CA9;
+@softBlue:    #6A8CC3;
+@softGreen:   #73C48B;
+@green:       #73C48B;
+
+@success:     #74C080;
+@warning:     #FA9F47;
+@error:       #D64242;
+@notice:      RGBA(252, 237, 230, 1);
+
+@mainColor:   @error;
+
+@black0:      rgba(0, 0, 0, 0);
+@black25:     rgba(0, 0, 0, 0.25);
+@black50:     rgba(0, 0, 0, 0.5);
+@black75:     rgba(0, 0, 0, 0.75);
+@black90:     rgba(0, 0, 0, 0.9);
+@black100:    rgba(0, 0, 0, 1);
+
+@white0:      rgba(255, 255, 255, 0);
+@white25:     rgba(255, 255, 255, 0.25);
+@white50:     rgba(255, 255, 255, 0.5);
+@white75:     rgba(255, 255, 255, 0.75);
+
+@spaced:      25px;
+
+.color {
+  &-black {
+    color: @black;
+  }
+  &-gray, &-grey {
+    color: @gray;
+  }
+}
+
+.bg-color {
+  &-green {
+    background-color: @green;
+  }
+  &-black {
+    background-color: @black;
+  }
+  &-bggray {
+    background-color: @bgGray;
+  }
+  &-gray {
+    background-color: @lighterGray;
+  }
+  &-darkgray {
+    background-color: @darkGray;
+  }
+  &-lightgray {
+    background-color: @lightGray;
+  }
+  &-warmgray {
+    background-color: @warmGray;
+  }
+  &-brightred {
+    background-color: @brightRed;
+  }
+  &-softred {
+    background-color: @softRed;
+  }
+  &-lightpink {
+    background-color: @lightPink
+  }
+  &-yellow {
+    background-color: @yellow;
+  }
+  &-brightblue {
+    background-color: @brightBlue;
+  }
+  &-softblue {
+    background-color: @softBlue;
+  }
+  &-softgreen {
+    background-color: @softGreen;
+  }
+}
+
+// Mixins
+
+.font_size(@px_size) {
+  @px: @px_size;
+  @rem: (@px_size / @root_font_size);
+  font-size: ~"@{px}px";
+  font-size: ~"@{rem}rem";
+}
+
+.rgba_background(@base, @alpha) {
+  background-color: rgba(red(@base), green(@base), blue(@base), @alpha);
+}
+
+.cover() {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.center() {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.absolute_center_parent() {
+  position: relative;
+}
+
+.absolute_center() {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  top: 0;
+}
+
+.fl {
+
+  &-left {
+    float: left;
+  }
+
+  &-right {
+    float: right;
+  }
+
+}
+
+.ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.red {
+  color: #C02815;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+img.rounded {
+  display: block;
+  border-radius: 50%;
+}
+
+.rotate-45 {
+  display: block;
+  transform: rotate(45deg);
+  transform-origin: center center;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+  transform-origin: center center;
+}
+
+.text {
+  &-right {
+    text-align: right;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-left {
+    text-align: left;
+  }
+}
+
+.transition(){
+  transition: 300ms ease;
+}
+
+.centered {
+  .center();
+  z-index: 9;
+  &-full {
+    width: 100%;
+  }
+  &-top {
+    top: 0;
+    transform: translate(-50%, @spaced*4);
+  }
+}
+
+.wrapper {
+  padding: @spaced/1.5;
+}
+
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.hidden {
+  display: none;
+}

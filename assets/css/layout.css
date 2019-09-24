@@ -1,0 +1,56 @@
+/* @override 
+	http://laac.dev/assets/css/layout.css */
+body {
+  font-family: 'Europa', 'Helvetica';
+  -webkit-font-smoothing: antialiased; }
+
+.img-responsive {
+  max-width: 100%;
+  display: block; }
+
+#content {
+  padding: 5px; }
+
+.home .section {
+  min-height: 300px; }
+
+.home .section > .item {
+  min-height: 300px;
+  background: #ddd;
+  position: relative; }
+
+.home .section .meta {
+  position: absolute;
+  padding: 50px;
+  color: #fff; }
+
+.home .section .top {
+  top: 0; }
+
+.home .section .bottom {
+  bottom: 0; }
+
+.home .section .meta .title {
+
+  font-weight: 700;
+  letter-spacing: 1px; }
+
+#section_home > .item {
+  background: #333; }
+
+#header {
+  position: absolute;
+  padding: 25px 50px;
+  z-index: 1; }
+
+#header li {
+  display: inline-block;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px; }
+
+#header li a {
+  color: #fff;
+  text-decoration: none; }
