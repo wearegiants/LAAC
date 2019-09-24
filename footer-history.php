@@ -1,6 +1,5 @@
   </div>
-  <script type="text/javascript" src="//use.typekit.net/vus4bqu.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link rel="stylesheet" href="https://use.typekit.net/lmm8lxb.css">
   <?php wp_footer(); ?>
 
   <script>
