@@ -32,7 +32,7 @@
 						<li><a class="primary-button-blue-nomargin" href="<?php echo get_permalink(1119); ?>">Press</a></li>
 						<li><a class="primary-button-blue-nomargin" href="<?php echo get_permalink(2540); ?>">Jobs</a></li>
 						<li><a class="primary-button-blue-nomargin" href="<?php echo get_permalink(1280); ?>">Forms</a></li>
-						<li><a class="primary-button-blue-nomargin" href="http://mylaac.com" target="blank">Member Login</a></li>
+						<li><a class="primary-button-blue-nomargin" href="https://mylaac.com" target="blank">Member Login</a></li>
 						<li><a class="primary-button-blue-nomargin" href="<?php echo get_permalink(3193); ?>">FAQ</a></li>
 					</ul>
 				</div>

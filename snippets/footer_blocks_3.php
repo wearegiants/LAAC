@@ -13,7 +13,7 @@
         <span>&copy; <?php date( 'Y' ); ?><?php bloginfo( 'sitename' ) ?></span>
         <a href="<?php echo get_permalink(449); ?>">Privacy Policy</a>
         <a href="<?php echo get_permalink(451); ?>">Terms and Conditions</a>
-        <a href="http://mylaac.com/" target="blank">Member Login</a>
+        <a href="https://mylaac.com/" target="blank">Member Login</a>
         <a href="<?php echo get_permalink(3193); ?>" target="blank">FAQ</a>
       </div>
     </div>
