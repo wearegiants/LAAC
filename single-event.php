@@ -2,7 +2,9 @@
 
  <?php 
     $date = DateTime::createFromFormat('Ymd', get_field('event_date'));
-    $formatedDate = $date->format('M d ,Y');
+    //$formatedDate = $date->format('M d ,Y');
+    $formatedDate = DateTime::createFromFormat('M d  ,Y', $date);
+
   ?>
 
 <div class="page">
