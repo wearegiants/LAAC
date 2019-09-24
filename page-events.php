@@ -50,7 +50,7 @@
       <div class="bit-2">
         <div class="meta">
           <span class="time"><?php echo $formatedDate; ?></span>
-          <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+          <h1 style="color: #094678"><?php the_title(); ?></h1>
           <span class="time"><?php the_field('event_time'); ?></span>
         </div>
         <?php the_excerpt(); ?>
